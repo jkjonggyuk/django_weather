@@ -2,11 +2,12 @@ from django.shortcuts import render
 import requests
 from .models import City
 from .forms import CityForm
+from the_weather.secrets import WEATHER_KEY as api_key
 
 def index(request):
     url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid={}'
     # key in api
-    api_key = '...'
+    # api_key = weather_key
 
     if request.method == 'POST':
         form = CityForm(request.POST)
