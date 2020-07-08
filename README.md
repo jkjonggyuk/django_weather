@@ -1,0 +1,1 @@
+This is a short weatherapi project on django from https://youtu.be/qCQGV7F7CUc
